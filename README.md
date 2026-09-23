@@ -1,0 +1,1 @@
+I'll build this as a real downloadable project — full frontend, a Node/Express + MongoDB backend for storing project data, and a deployment guide — since you're planning to host it outside Claude, not just preview it here.

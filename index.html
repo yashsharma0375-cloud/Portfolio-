@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Rivera — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="#top" class="brand">AR<span class="brand-dot">.</span></a>
+  <nav class="topnav">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="topnav-cta" href="#contact">Say hello</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="hero-kicker">Software Engineer, based in Bengaluru</p>
+    <h1 class="hero-title">
+      I build backends<br>
+      that don't fall over<br>
+      at 2&nbsp;a.m.
+    </h1>
+    <p class="hero-sub">
+      Alex Rivera — five years turning slow, fragile systems into ones that scale
+      quietly. Currently building payments infra at a Series B startup.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">See the work</a>
+      <a href="/resume.pdf" class="btn btn-ghost">Resume (PDF)</a>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <div class="section-head">
+      <h2>Selected work</h2>
+      <p id="work-status" class="section-note">Loading from the API…</p>
+    </div>
+    <div id="project-list" class="project-list">
+      <!-- populated by script.js; falls back to static markup if the API is unreachable -->
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-grid">
+      <div class="about-copy">
+        <h2>About</h2>
+        <p>
+          I started out fixing a leaky Rails app at a five-person startup and
+          never really stopped chasing the boring, load-bearing problems:
+          queues that back up, migrations that lock tables, dashboards nobody
+          trusts. I like the parts of the job most people skip.
+        </p>
+        <p>
+          Outside of work I write short technical notes on distributed
+          systems and mentor two engineers through a local bootcamp.
+        </p>
+      </div>
+      <dl class="about-facts">
+        <div><dt>Based in</dt><dd>Bengaluru, India</dd></div>
+        <div><dt>Experience</dt><dd>5 years</dd></div>
+        <div><dt>Currently</dt><dd>Backend Engineer, Fintech</dd></div>
+        <div><dt>Open to</dt><dd>Contract & full-time roles</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Toolbox</h2>
+    <div class="skills-cols">
+      <div class="skills-col">
+        <h3>Languages</h3>
+        <p>JavaScript / TypeScript, Python, SQL, Go</p>
+      </div>
+      <div class="skills-col">
+        <h3>Backend</h3>
+        <p>Node.js, Express, Django, REST & GraphQL APIs</p>
+      </div>
+      <div class="skills-col">
+        <h3>Data</h3>
+        <p>PostgreSQL, MongoDB, Redis, Kafka</p>
+      </div>
+      <div class="skills-col">
+        <h3>Infra</h3>
+        <p>Docker, AWS, CI/CD, Vercel, Render</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let's talk</h2>
+    <p class="section-note">
+      Have a role, a project, or just a question about something above? This
+      form posts straight to the backend below.
+    </p>
+    <form id="contact-form" class="contact-form">
+      <div class="field-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+      <div class="field-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div class="field-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message</button>
+      <p id="form-status" class="form-status" role="status"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Alex Rivera — built with HTML, CSS, JS &amp; a Node/Express API.</p>
+  <div class="footer-links">
+    <a href="https://github.com">GitHub</a>
+    <a href="https://linkedin.com">LinkedIn</a>
+    <a href="mailto:hello@example.com">hello@example.com</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
